@@ -1,5 +1,5 @@
 import React from "react";
-;
+
 import HeroSection from "../hompage/HeroSection";
 import EngineeringDisciplines from "../hompage/EngineeringDisciplines";
 import WhoWeAreSection from "../hompage/WhoWeAreSection";
