@@ -37,8 +37,8 @@ export default function MembershipLevelSection() {
   ];
 
   return (
-    <section className="bg-[#f7f7f5] py-10 px-4">
-      <div className="max-w-[1240px] mx-auto">
+    <section className="bg-[#f7f7f5] py-10 px-20">
+      <div className=" mx-auto">
         <div className="text-center mb-5">
           <div className="mx-auto mb-1 h-[3px] w-[42px] bg-[#ff2a2a]" />
           <h2 className="text-[24px] font-black text-[#111] mt-3 mb-5">

@@ -50,7 +50,7 @@ export default function AboutHeroSection() {
           <div className="w-[58px] h-[4px] bg-[#ed1c1c] mt-5 mb-5" />
 
           {/* Description */}
-          <p className="max-w-[520px] text-[13px] md:text-[15px] leading-[1.75] text-[#d7dde0] font-medium">
+          <p className="text-[13px] md:text-[15px] leading-[1.75] text-[#d7dde0] font-medium">
             IESC is a global authority dedicated to advancing engineering
             competency, setting international standards, and empowering
             professionals and industries worldwide.

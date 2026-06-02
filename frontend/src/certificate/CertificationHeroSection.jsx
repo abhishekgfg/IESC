@@ -21,7 +21,7 @@ export default function CertificationHeroSection() {
     >
       <div className="absolute inset-0 bg-black/10" />
 
-      <div className="relative z-10 max-w-[1280px] mx-auto px-6 lg:px-10 pt-[42px] pb-[42px]">
+      <div className="relative z-10  mx-auto px-6 lg:px-10 pt-[42px] pb-[42px]">
         <div className="max-w-[580px]">
           <div className="flex items-center gap-2 text-[13px] font-semibold text-white/85 mb-9">
             <span>Home</span>

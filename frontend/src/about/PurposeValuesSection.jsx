@@ -67,7 +67,7 @@ export default function PurposeValuesSection() {
   return (
     <section className="bg-white text-[#111]">
       {/* Our Purpose */}
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-[70px] py-[48px]">
+      <div className="mx-auto px-6 lg:px-[50px] py-[48px]">
         <div className="grid lg:grid-cols-2 gap-10 mb-12">
           <div>
             <p className="text-[#ed1c1c] text-[12px]  font-bold font-black uppercase mb-3">
@@ -122,7 +122,7 @@ export default function PurposeValuesSection() {
 
       {/* Our Values */}
       <div className="bg-[#f3f3f2]">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-[70px] py-[34px] grid lg:grid-cols-[1.1fr_.9fr] gap-12 items-center">
+        <div className=" mx-auto px-6 lg:px-[50px] py-[34px] grid lg:grid-cols-[1.1fr_.9fr] gap-12 items-center">
           <div>
             <p className="text-[#ed1c1c] text-[12px]  font-bold font-black uppercase mb-6">
               OUR VALUES

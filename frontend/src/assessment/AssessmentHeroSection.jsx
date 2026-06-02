@@ -21,7 +21,7 @@ export default function AssessmentHeroSection() {
     >
       <div className="absolute inset-0 bg-black/10" />
 
-      <div className="relative z-10 max-w-[1280px] mx-auto px-6 lg:px-10 pt-[45px] pb-[42px]">
+      <div className="relative z-10  mx-auto px-6 lg:px-10 pt-[45px] pb-[42px]">
         <div className="max-w-[650px]">
           <div className="flex items-center gap-2 text-[13px] font-semibold text-white/85 mb-8">
             <span>Home</span>
@@ -29,7 +29,7 @@ export default function AssessmentHeroSection() {
             <span>Industrial Competency Assessments</span>
           </div>
 
-          <h1 className="text-[48px] md:text-[50px] leading-[1.05] font-black tracking-[0.2px] mb-5">
+          <h1 className="text-[48px] md:text-[50px] leading-[1.05] font-bold font-black tracking-[0.2px] mb-5">
             Industrial <br />
             Competency Assessments
           </h1>

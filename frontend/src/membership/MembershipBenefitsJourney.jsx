@@ -100,7 +100,7 @@ export default function MembershipBenefitsJourney() {
     <>
       {/* BENEFITS SECTION */}
       <section className="bg-white text-[#111]">
-        <div className="max-w-[1380px] mx-auto px-5 lg:px-10 pt-7 pb-4">
+        <div className=" mx-auto px-5 lg:px-10 pt-7 pb-4">
 
           {/* Heading */}
           <div className="text-center mb-7">
@@ -150,7 +150,7 @@ export default function MembershipBenefitsJourney() {
 
       {/* JOURNEY SECTION */}
       <section className="bg-[#f8f8f7] text-[#111] py-12">
-        <div className="max-w-[1380px] mx-auto px-5 lg:px-10">
+        <div className=" mx-auto px-5 lg:px-10">
 
           <h2 className="text-center text-[28px] font-black mb-10">
             The Membership Journey

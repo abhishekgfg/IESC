@@ -53,7 +53,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col lg:flex-row justify-between px-5 sm:px-8 md:px-12 lg:px-[70px] pt-6 sm:pt-8 md:pt-10 lg:pt-[30px] gap-8 lg:gap-0">
         
         {/* Left Content */}
-        <div className="max-w-[575px] text-center lg:text-left">
+        <div className=" text-center lg:text-left">
           <p className="mb-3 md:mb-[16px] text-sm md:text-[18px] font-black uppercase tracking-[0.5px] text-[#e6e8ea]">
             GLOBAL STANDARDS FOR
           </p>

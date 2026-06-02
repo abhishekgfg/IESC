@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Search, Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import iescLogo from "../images/iesc logo.png";
+import iescLogo from "../images/logo.png";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
-  // Prevent body scroll when sidebar is open
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
     }
+
     return () => {
       document.body.style.overflow = "unset";
     };
@@ -32,13 +32,22 @@ export default function Header() {
   return (
     <>
       <header className="h-[68px] bg-[#02070c] border-b border-[#0f151a] text-white flex items-center px-4 md:px-[28px] relative z-50">
-        <div className="w-[210px] lg:w-[260px] flex items-center">
-          <NavLink to="/">
+        <div className="w-[230px] lg:w-[290px] flex items-center">
+          <NavLink to="/" className="flex items-center gap-3">
             <img
               src={iescLogo}
               alt="IESC Logo"
               className="h-[48px] md:h-[52px] w-auto object-contain"
             />
+
+            <div className="flex flex-col">
+              <span className="text-white font-bold text-[22px] md:text-[28px] leading-none tracking-[2px]">
+                IESC
+              </span>
+              <span className="hidden md:block text-[8px] lg:text-[9px] text-[#b8c2cc] tracking-[1.3px] uppercase leading-tight mt-1">
+                International Engineering <br/>Standards Council
+              </span>
+            </div>
           </NavLink>
         </div>
 
@@ -68,7 +77,11 @@ export default function Header() {
         </nav>
 
         <div className="ml-auto flex items-center gap-5">
-          <Search size={23} strokeWidth={2} className="hidden sm:block text-white cursor-pointer hover:text-[#e41d1d] transition-colors" />
+          <Search
+            size={23}
+            strokeWidth={2}
+            className="hidden sm:block text-white cursor-pointer hover:text-[#e41d1d] transition-colors"
+          />
 
           <button
             onClick={() => setOpen(true)}
@@ -80,7 +93,6 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Overlay with fade animation */}
       <div
         onClick={() => setOpen(false)}
         className={`fixed inset-0 bg-black/70 z-[90] transition-all duration-300 ${
@@ -88,19 +100,29 @@ export default function Header() {
         }`}
       />
 
-      {/* Sidebar with slide animation */}
       <aside
         className={`fixed top-0 right-0 h-full w-[85%] max-w-[320px] bg-gradient-to-b from-[#02070c] to-[#0a1117] border-l border-[#15232b] z-[100] shadow-2xl transition-transform duration-300 ease-out ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Header with logo and close button */}
         <div className="flex items-center justify-between p-5 border-b border-white/10">
-          <img
-            src={iescLogo}
-            alt="IESC Logo"
-            className="h-[45px] w-auto object-contain"
-          />
+          <div className="flex items-center gap-3">
+            <img
+              src={iescLogo}
+              alt="IESC Logo"
+              className="h-[45px] w-auto object-contain"
+            />
+
+            <div className="flex flex-col">
+              <span className="text-white font-extrabold text-[24px] leading-none tracking-[2px]">
+                IESC
+              </span>
+              <span className="text-[8px] text-[#b8c2cc] tracking-[1.1px] uppercase leading-tight mt-1">
+                Engineering Standards Council
+              </span>
+            </div>
+          </div>
+
           <button
             onClick={() => setOpen(false)}
             className="text-white hover:text-[#e41d1d] transition-colors p-2 hover:bg-white/5 rounded-full"
@@ -110,7 +132,6 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Navigation links */}
         <nav className="flex flex-col py-4 max-h-[calc(100vh-80px)] overflow-y-auto">
           {navItems.map((item, index) => (
             <NavLink
@@ -125,9 +146,11 @@ export default function Header() {
                 }`
               }
               style={{
-                animation: open ? `slideIn 0.3s ease-out ${index * 0.05}s forwards` : "none",
+                animation: open
+                  ? `slideIn 0.3s ease-out ${index * 0.05}s forwards`
+                  : "none",
                 opacity: 0,
-                transform: "translateX(20px)"
+                transform: "translateX(20px)",
               }}
             >
               {({ isActive }) => (
@@ -142,16 +165,24 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Optional: Social links or additional info */}
         <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-white/10 bg-[#02070c]/95 backdrop-blur-sm">
           <div className="flex justify-center gap-6">
-            <a href="#" className="text-[#d0d6db] hover:text-[#e41d1d] transition-colors text-sm">
+            <a
+              href="#"
+              className="text-[#d0d6db] hover:text-[#e41d1d] transition-colors text-sm"
+            >
               LinkedIn
             </a>
-            <a href="#" className="text-[#d0d6db] hover:text-[#e41d1d] transition-colors text-sm">
+            <a
+              href="#"
+              className="text-[#d0d6db] hover:text-[#e41d1d] transition-colors text-sm"
+            >
               Twitter
             </a>
-            <a href="#" className="text-[#d0d6db] hover:text-[#e41d1d] transition-colors text-sm">
+            <a
+              href="#"
+              className="text-[#d0d6db] hover:text-[#e41d1d] transition-colors text-sm"
+            >
               Facebook
             </a>
           </div>
