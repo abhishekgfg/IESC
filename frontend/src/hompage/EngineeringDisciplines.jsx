@@ -68,7 +68,7 @@ export default function EngineeringDisciplines() {
   ];
 
   return (
-    <section className="bg-[#f7f7f7] pt-[390px] md:pt-[230px] pb-[42px]">
+    <section className="bg-[#f7f7f7] pt-[390px] md:pt-[240px] pb-[42px]">
       <div className="px-4 sm:px-6 md:px-10 lg:px-20 text-center">
         <p className="text-[10px] font-black uppercase tracking-[1.5px] text-[#ed1c1c]">
           ENGINEERING DISCIPLINES

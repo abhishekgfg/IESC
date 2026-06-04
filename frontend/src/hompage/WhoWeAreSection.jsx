@@ -27,7 +27,7 @@ export default function WhoWeAreSection() {
       {/* overlay */}
       <div className="absolute inset-0 " />
 
-      <div className="relative z-10  mx-auto px-5 md:px-6 lg:px-10 py-[40px] md:py-[20px] grid lg:grid-cols-[1fr_240px] gap-8 items-start">
+      <div className="relative z-10  mx-auto px-5 md:px-6 lg:px-10 py-[40px] md:py-[40px] grid lg:grid-cols-[1fr_240px] gap-8 items-start">
         
         {/* Left Content */}
         <div className="max-w-[450px]">

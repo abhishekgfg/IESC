@@ -53,7 +53,7 @@ export default function MembershipPathway() {
 
   return (
     <section className="bg-[#f6f6f4] text-[#111]">
-      <div className="mx-auto px-5 lg:px-10 pt-4 pb-8">
+      <div className="mx-auto px-5 lg:px-10 pt-4 pb-8 py-[40px] md:py-[50px]">
         <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-8 lg:gap-[75px] items-start">
           <div className="h-[260px] sm:h-[320px] lg:h-[365px] w-full overflow-hidden shadow-sm">
             <img

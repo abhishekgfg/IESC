@@ -50,7 +50,7 @@ export default function HeroSection() {
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-[#00080c]" />
 
-      <div className="relative z-10 flex flex-col lg:flex-row justify-between px-5 sm:px-8 md:px-12 lg:px-[70px] pt-6 sm:pt-8 md:pt-10 lg:pt-[30px] gap-8 lg:gap-0">
+      <div className="relative z-10 flex flex-col lg:flex-row justify-between px-5 sm:px-8 md:px-12 lg:px-[70px] pt-6 sm:pt-8 md:pt-10 lg:pt-[40px] gap-8 lg:gap-0">
         
         {/* Left Content */}
         <div className=" text-center lg:text-left">
